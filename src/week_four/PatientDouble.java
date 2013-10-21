@@ -27,23 +27,24 @@ public class PatientDouble {
 	
 	
 	public void addPatient(PatientDouble newPatient) {
-		if (this.nextPatient == null) {
-			
-			
-//			this.previousPatient = ;
-
+		if (this.nextPatient == null) {	
 			this.nextPatient = newPatient;
+//			this.previousPatient =  this;
+
 		} else { 
-			
+
 			this.nextPatient.addPatient(newPatient);
+
 		} 
+
 	}
 	
 	
 	
 	public void displayPatient() {
-		prettyPrint(this);
 		prettyPrint(previousPatient);
+
+		prettyPrint(nextPatient);
 	}
 	
 	public void displayNextPatient() {

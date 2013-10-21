@@ -16,16 +16,21 @@ private void launch() {
 		
 	    PatientDouble firstPatient = new PatientDouble("John", 33, "Tuberculosis"); 
 		patientListStart = firstPatient;
-		patientListEnd = firstPatient;
+//		patientListEnd = firstPatient;
 		
+			
 		PatientDouble secondPatient = new PatientDouble("Mary", 66, "Meningitis"); 
-		patientListStart.addPatient(secondPatient);
+		patientListStart.addPatient(secondPatient );
+		
+		
+		
 		
 		PatientDouble thirdPatient = new PatientDouble("Michael", 24, "cold"); 
-		patientListStart.addPatient(thirdPatient);
-		
+		patientListStart.addPatient(thirdPatient );
+
 		PatientDouble fouthPatient = new PatientDouble("Sam", 29, "cancer"); 
 		patientListStart.addPatient(fouthPatient);
+		
 		
 		
 		thirdPatient.displayPatient();
