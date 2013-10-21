@@ -22,62 +22,29 @@ public class PatientDouble {
 		return counter;
 	}
 	
-	
-	
-	
-	
-	public void addPatient(PatientDouble newPatient) {
-		if (this.nextPatient == null) {	
-			this.nextPatient = newPatient;
-//			this.previousPatient =  this;
-
-		} else { 
-
-			this.nextPatient.addPatient(newPatient);
-
-		} 
-
+	public void reduceSize() {
+		counter --;
 	}
 	
-	
-	
-	public void displayPatient() {
-		prettyPrint(previousPatient);
-
-		prettyPrint(nextPatient);
+	public String getName() {
+		return name;
 	}
 	
-	public void displayNextPatient() {
-		prettyPrint(nextPatient);
-	}
-	
-	private void prettyPrint(PatientDouble patient) {
-		System.out.println(patient.name + ", " + patient.age + ", " + patient.illness);
-	}
-	
-	public PatientDouble returnNextPatient() {
+	public PatientDouble getNext() {
 		return nextPatient;
-		
+	}
+	
+	public void setNext(PatientDouble n) {
+		this.nextPatient = n;
 	}
 	
 	
+	public PatientDouble getPrevious() {
+		return previousPatient;
+	}
 	
-	
-	
-	public boolean deletePatient(PatientDouble patient) { 
-		
-		if (this.nextPatient == null) {
-			System.out.println("debug");
-			return false;
-			
-		} else if (this.nextPatient.name.equals(patient.name)) {
-		// We found it! It is the next one!
-		// Now link this patient to the one after the next 
-			this.nextPatient = nextPatient.nextPatient; 
-			return true;
-		} else {
-		return this.nextPatient.deletePatient(patient);
-		} 
+	public void setPrevious(PatientDouble n) {
+		this.previousPatient = n;
 	}
 
 }
