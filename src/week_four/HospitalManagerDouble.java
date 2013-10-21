@@ -3,13 +3,11 @@ package week_four;
 public class HospitalManagerDouble {
 	
 	private PatientDouble patientListStart;
-	private PatientDouble patientListEnd;
 	/**
 	 * Constructor. Set the start position to null.
 	 */
 	public HospitalManagerDouble() {
 		patientListStart = null;
-		patientListEnd = null;
 	}
 	
 
@@ -137,9 +135,6 @@ public class HospitalManagerDouble {
 		PatientDouble secondPatient = new PatientDouble("Mary", 66, "Meningitis"); 
 		PatientDouble thirdPatient = new PatientDouble("Michael", 24, "cold");
 		PatientDouble fouthPatient = new PatientDouble("Sam", 29, "cancer"); 
-
-
-
 		
 		hmd.add(firstPatient);
 		hmd.add(secondPatient);
