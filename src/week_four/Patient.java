@@ -6,13 +6,22 @@ public class Patient {
 	private int age;
 	private String illness;
 	private Patient nextPatient;
+	private static int counter;
 	
 	public Patient(String name, int age, String illness) {
 		this.name = name;
 		this.age = age;
 		this.illness = illness;
 		this.nextPatient = null;
+		counter++;
 	}
+	
+	public int size() {
+		return counter;
+	}
+	
+	
+	
 	
 	
 	public void addPatient(Patient newPatient) {
@@ -23,14 +32,28 @@ public class Patient {
 		} 
 	}
 	
-	public void printPatient() {
-		System.out.println(this.name + ", " + this.age + ", " + this.illness);
+	public void displayPatient() {
+		prettyPrint(this);
 	}
+	
+	public void displayNextPatient() {
+		prettyPrint(nextPatient);
+	}
+	
+	private void prettyPrint(Patient patient) {
+		System.out.println(patient.name + ", " + patient.age + ", " + patient.illness);
+	}
+	
+	public Patient returnNextPatient() {
+		return nextPatient;
+		
+	}
+	
 	
 	public boolean deletePatient(Patient patient) { 
 		
 		if (this.nextPatient == null) {
-			
+			System.out.println("debug");
 			return false;
 			
 		} else if (this.nextPatient.name.equals(patient.name)) {
@@ -42,6 +65,7 @@ public class Patient {
 		return this.nextPatient.deletePatient(patient);
 		} 
 	}
+
 	
 	
 	

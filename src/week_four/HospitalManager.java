@@ -11,9 +11,7 @@ public class HospitalManager {
 		
 
 	}
-	
-	
-	
+		
 	private void launch() {
 		
 		Patient firstPatient = new Patient("John", 33, "Tuberculosis"); 
@@ -25,10 +23,38 @@ public class HospitalManager {
 		Patient thirdPatient = new Patient("Michael", 24, "cold"); 
 		patientListStart.addPatient(thirdPatient);
 		
-		secondPatient.printPatient();
+		Patient fouthPatient = new Patient("Sam", 29, "cancer"); 
+		patientListStart.addPatient(fouthPatient);
 		
-		System.out.println(secondPatient.deletePatient(secondPatient));
+//		secondPatient.displayPatient();
+		
+		System.out.println("Patient cue: " + patientListStart.size());
+		
+
+		
+//		secondPatient.displayNextPatient();
 //		secondPatient.printPatient();
+		
+		displayAllPatients();
+		
+		
+		patientListStart.deletePatient(secondPatient);
+
+		displayAllPatients();
+		patientListStart.deletePatient(thirdPatient);
+		displayAllPatients();
+		
+		
+	}
+	
+	private void displayAllPatients() {
+		// 2: Display all patients info
+		Patient firstPatient = patientListStart;
+		while (patientListStart != null) {
+			patientListStart.displayPatient();
+			patientListStart = patientListStart.returnNextPatient();
+			}
+		patientListStart = firstPatient;
 	}
 
 }
