@@ -15,6 +15,10 @@ public class Person {
 		
 	}
 	
+	public void reduceCounter() {
+		counter --;
+	}
+	
 	public int counter() {
 		return counter;
 	}
@@ -31,6 +35,8 @@ public class Person {
 	public void setNext(Person n) {
 		this.next = n;
 	}
+	
+
 	
 
 	

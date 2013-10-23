@@ -27,6 +27,16 @@ public class Supermarket   {
 		
 		System.out.println(theQueue.getSize());
 		
+		servePerson();
+		
+		System.out.println(theQueue.getSize());
+		servePerson();
+		
+		System.out.println(theQueue.getSize());
+
+		
+		
+		
 	}
 	
 	private void addPerson(Person somePerson) {
@@ -36,7 +46,9 @@ public class Supermarket   {
 	}
 	
 	private void servePerson() {
-		this.theQueue.retrieve();
+		System.out.println(this.theQueue.retrieve().getName());
+
+		
 	}
 	
 	
