@@ -5,8 +5,8 @@ public class PatientCircle {
 	private String name;
 	private int age;
 	private String illness;
-	private PatientDouble nextPatient;
-//	private PatientDouble previousPatient;
+	private PatientCircle nextPatient;
+//	private PatientCircle previousPatient;
 	private static int counter;
 	
 	public PatientCircle(String name, int age, String illness) {
@@ -30,11 +30,11 @@ public class PatientCircle {
 		return name;
 	}
 	
-	public PatientDouble getNext() {
+	public PatientCircle getNext() {
 		return nextPatient;
 	}
 	
-	public void setNext(PatientDouble n) {
+	public void setNext(PatientCircle n) {
 		this.nextPatient = n;
 	}
 	
