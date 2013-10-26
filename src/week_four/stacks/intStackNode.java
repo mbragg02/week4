@@ -1,7 +1,7 @@
 package week_four.stacks;
 
 /**
- * A node in a dynamic singly-linked list of Strings
+ * A node in a dynamic singly-linked list of Integers
  */
 public class intStackNode {
     private int value;
@@ -13,7 +13,7 @@ public class intStackNode {
     }
 
     /**
-     * Returns the string in this node
+     * Returns the int  in this node
      */
     public int getValue() {
 	  return value;

@@ -49,7 +49,7 @@ public class pointerIntStack implements intStack {
     }
 
     /**
-     * Returns the number of string in the stack
+     * Returns the number of integers in the stack
      */
     public int getSize() {
 	  int result = 0;
