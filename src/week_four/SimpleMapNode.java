@@ -1,6 +1,5 @@
 package week_four;
 
-import week_four.Supermarket.Person;
 
 public class SimpleMapNode {
 	
