@@ -35,6 +35,11 @@ public class HospitalManagerCircle {
 		
 		hmc.prettyPrint();
 		
+		System.out.println(patientListStart.size());
+		
+		
+		
+		
 	}
 	
 	private void add(PatientCircle newPatient) {
@@ -71,6 +76,7 @@ public class HospitalManagerCircle {
 			}
 			aux = aux.getNext();
 		}
+		patientListStart.reduceSize();
 	}
 	
 	
