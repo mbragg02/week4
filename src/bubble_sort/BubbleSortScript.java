@@ -12,20 +12,28 @@ public class BubbleSortScript {
 	private void launch() {
 	
 		
-		IntegerList list = new IntegerList();
-		list.add(54);
-		list.add(25);
-		list.add(5);
-		list.add(74);
-		list.add(23);
-		list.add(66);
-		list.add(47);
-		list.prettyPrint();
+		IntegerList listToSort = new IntegerList();
+		listToSort.add(54);
+		listToSort.add(25);
+		listToSort.add(5);
+		listToSort.add(74);
+		listToSort.add(23);
+
+		
+//		listToSort.add(54);
+//		listToSort.add(2);
+//		listToSort.add(23);
+//		listToSort.add(211);
+//		listToSort.add(56);
+//		listToSort.add(5);
+		
+		
+		listToSort.prettyPrint();
 		
 		System.out.println("///////");
 		
-		list = ListUtilities.bubbleSort(list);
-		list.prettyPrint();
+		listToSort = ListUtilities.bubbleSort(listToSort);
+		listToSort.prettyPrint();
 		
 	}
 

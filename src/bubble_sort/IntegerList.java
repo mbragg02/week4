@@ -14,6 +14,10 @@ private IntegerNode first;
 		return this.first;
 	}
 	
+	public void setFirst(IntegerNode node) {
+		this.first = node;
+	}
+	
 	public void add(int n) {
 
 		IntegerNode newNumber = new IntegerNode(n);
