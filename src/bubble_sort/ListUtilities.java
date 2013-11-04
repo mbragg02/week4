@@ -11,10 +11,10 @@ public class ListUtilities {
 		while(sorted == false) 
 		{	
 			IntegerNode currentNode = listToSort.getFirst();
-
+			sorted = true; // let us assume that after the current iteration of the loop we will have a sorted list
+			
 			while(currentNode.getNext().getNext() != null) 
 			{	
-				sorted = true; // let us assume that after the current iteration of the loop we will have a sorted list
 				IntegerNode temp1 = currentNode;
 				IntegerNode temp2 = temp1.getNext();
 				IntegerNode temp3 = temp2.getNext();

@@ -13,11 +13,19 @@ public class BubbleSortScript {
 	
 		
 		IntegerList listToSort = new IntegerList();
-		listToSort.add(54);
-		listToSort.add(25);
-		listToSort.add(5);
-		listToSort.add(74);
-		listToSort.add(23);
+//		listToSort.add(54);
+//		listToSort.add(25);
+//		listToSort.add(5);
+//		listToSort.add(74);
+//		listToSort.add(23);
+//		listToSort.add(6);
+		
+//		listToSort.add(54);
+//		listToSort.add(2);
+//		listToSort.add(23);
+//		listToSort.add(211);
+//		listToSort.add(56);
+//		listToSort.add(5);
 
 		
 //		listToSort.add(54);

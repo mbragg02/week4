@@ -4,7 +4,7 @@ public class HashUtilitiesTester {
 
 	public static void main(String[] args) {
 		
-		String str ="rgrehtrhrger11";
+		String str ="ehojr jiojer jir ejio ";
 		int hash = str.hashCode();
 		System.out.println(hash);
 		
