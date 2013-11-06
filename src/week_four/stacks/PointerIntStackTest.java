@@ -8,33 +8,56 @@ public class PointerIntStackTest {
 
 
 
-	@Test
+
+	
 	public void testPush() {
-//		intStack firstStack = new pointerIntStack();
-//		firstStack.push(5);
-//		
-//		assertEquals(output, expected);
-		fail("Not yet implemented");
+
 	}
 
-	@Test
+	
 	public void testPop() {
-		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testPeek() {
-		fail("Not yet implemented");
+	public void testPeek() {	
+		intStack s = new pointerIntStack();
+		int expected = 5;
+		s.push(expected);
+		int output = s.peek();
+		
+		assertEquals(output, expected);
 	}
 
 	@Test
 	public void testIsEmpty() {
-		fail("Not yet implemented");
+		intStack s = new pointerIntStack();
+		boolean output = s.isEmpty();
+		boolean expected = true;
+		assertEquals(output, expected);
+		
+		
 	}
+	
+	@Test
+	public void test2IsEmpty() {
+		intStack s = new pointerIntStack();
+		int x = 5;
+		s.push(x);
+		boolean output = s.isEmpty();
+		boolean expected = false;
+		assertEquals(output, expected);
+	}
+	
+	
 
 	@Test
 	public void testGetSize() {
-		fail("Not yet implemented");
+		intStack s = new pointerIntStack();
+		int x = 5;
+		s.push(x);
+		int output = ((pointerIntStack) s).getSize();
+		int expected = 1;
+		assertEquals(output, expected);
 	}
 
 }
