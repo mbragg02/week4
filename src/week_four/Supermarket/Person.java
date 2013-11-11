@@ -5,7 +5,7 @@ public class Person {
 	
 	private String name;
 	private Person next;
-	private static int counter;
+	private static int counter = 0;
 
 	
 	public Person(String name) {

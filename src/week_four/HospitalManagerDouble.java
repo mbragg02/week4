@@ -11,7 +11,7 @@ public class HospitalManagerDouble {
 	}
 	
 
-	private void add(PatientDouble newPatient) {
+	public void add(PatientDouble newPatient) {
 //		Create a new PatientDouble object
 //		PatientDouble newPatient = new PatientDouble(name, age, illness); 
 		
@@ -35,7 +35,7 @@ public class HospitalManagerDouble {
 	}
 	
 	
-	private void remove(PatientDouble x) {
+	public void remove(PatientDouble x) {
 		
 		if (patientListStart == null) {
 			return;

@@ -18,6 +18,8 @@ public class PatientCircle {
 		counter++;
 	}
 	
+	
+	
 	public int size() {
 		return counter;
 	}

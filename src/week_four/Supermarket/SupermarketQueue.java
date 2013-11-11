@@ -16,6 +16,7 @@ public class SupermarketQueue implements PersonQueue {
 		if (head == null) {
 			head = newNode;
 			tail = newNode;
+			newNode.setNext(tail);
 		} else {
 			newNode.setNext(tail);
 			tail = newNode;
@@ -48,6 +49,9 @@ public class SupermarketQueue implements PersonQueue {
 	
 	
 	public int getSize() {
+		if(head == null) {
+			return 0;
+		}
 		return head.counter();
 		
 	}

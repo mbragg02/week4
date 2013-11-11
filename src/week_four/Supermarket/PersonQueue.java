@@ -15,6 +15,6 @@ public interface PersonQueue {
 	/**
 	 * Returns the size of the cue
 	 */
-//	int getSize();
+	int getSize();
 
 }

@@ -9,13 +9,27 @@ public class PointerIntStackTest {
 
 
 
-	
+	@Test
 	public void testPush() {
+		intStack s = new pointerIntStack();
+		int expected = 5;
+		s.push(expected);
+		int output = s.peek();
+		
+		assertEquals(output, expected);
 
 	}
 
-	
+	@Test
 	public void testPop() {
+		intStack s = new pointerIntStack();
+		int expected = 5;
+		s.push(expected);
+		int output = s.pop();
+		
+		assertEquals(output, expected);
+		boolean empty = s.isEmpty();
+		assertEquals(empty, true);
 	}
 
 	@Test
@@ -26,6 +40,8 @@ public class PointerIntStackTest {
 		int output = s.peek();
 		
 		assertEquals(output, expected);
+		
+
 	}
 
 	@Test
