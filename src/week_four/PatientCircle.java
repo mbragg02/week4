@@ -7,7 +7,6 @@ public class PatientCircle {
 	private String illness;
 	private PatientCircle nextPatient;
 //	private PatientCircle previousPatient;
-	private static int counter;
 	
 	public PatientCircle(String name, int age, String illness) {
 		this.name = name;
@@ -15,17 +14,6 @@ public class PatientCircle {
 		this.illness = illness;
 		this.nextPatient = null;
 //		this.previousPatient = null;
-		counter++;
-	}
-	
-	
-	
-	public int size() {
-		return counter;
-	}
-	
-	public void reduceSize() {
-		counter --;
 	}
 	
 	public String getName() {

@@ -35,14 +35,14 @@ public class HospitalManagerCircle {
 		
 		hmc.prettyPrint();
 		
-		System.out.println(patientListStart.size());
+		System.out.println(returnSize());
 		
 		
 		
 		
 	}
 	
-	private void add(PatientCircle newPatient) {
+	public void add(PatientCircle newPatient) {
 		
 		if (patientListStart == null) {
 			patientListStart = newPatient;
@@ -57,11 +57,12 @@ public class HospitalManagerCircle {
 		}
 		aux.setNext(newPatient);
 		newPatient.setNext(patientListStart);	
+		
 	}
 	
 	
 	
-	private void remove(PatientCircle x) {
+	public void remove(PatientCircle x) {
 		
 		if (patientListStart == null) {
 			return;
@@ -76,13 +77,26 @@ public class HospitalManagerCircle {
 			}
 			aux = aux.getNext();
 		}
-		patientListStart.reduceSize();
+	}
+	
+	public int returnSize(){
+		PatientCircle current = patientListStart;
+		int counter = 0;
+		do {
+			current = current.getNext();
+			counter++;
+			
+		}while (current != patientListStart);
+		
+		return counter;
+		
+//		return patientListStart.size();
 	}
 	
 	
 	
 	
-	private void prettyPrint(){
+	public void prettyPrint(){
 		System.out.println("------------------");
 		System.out.println("Print forward");
 		System.out.println("------------------");
