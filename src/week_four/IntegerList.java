@@ -23,6 +23,7 @@ public class IntegerList {
 		}
 		
 		IntegerNode aux = first;
+		
 		while(aux.getNext() != null) {
 			aux = aux.getNext();
 		}
