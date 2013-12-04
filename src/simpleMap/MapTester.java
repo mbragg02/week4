@@ -11,6 +11,7 @@ public class MapTester {
 	private void launch() {
 		SimpleMap mymap = new SimpleMap();
 		String value = "hello";
+		System.out.println(hash(value));
 		
 		mymap.put(hash(value), value);
 		System.out.println(mymap.get(hash(value)));
